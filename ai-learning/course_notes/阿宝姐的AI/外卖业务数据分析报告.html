@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>外卖业务数据分析报告</title>
+<style>
+:root{--blue:#1a73e8;--blue-dk:#1557b0;--blue-lt:#e8f0fe;--red:#ea4335;--green:#34a853;--orange:#f9ab00;--text:#202124;--text2:#5f6368;--border:#dadce0;--sh:0 2px 8px rgba(0,0,0,.1)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',sans-serif;background:#f1f3f4;color:var(--text);font-size:14px}
+.wrap{max-width:1100px;margin:0 auto;padding:20px}
+.header{background:linear-gradient(135deg,#0d47a1,#1a73e8);color:#fff;padding:28px 32px;border-radius:12px;margin-bottom:24px}
+.header h1{font-size:22px;font-weight:700;margin-bottom:6px;letter-spacing:.5px}
+.header p{font-size:13px;opacity:.8}
+.tags{display:flex;gap:10px;margin-top:14px;flex-wrap:wrap}
+.tag{background:rgba(255,255,255,.18);padding:3px 12px;border-radius:20px;font-size:12px}
+.sec{font-size:15px;font-weight:600;margin:0 0 14px;padding-left:10px;border-left:3px solid var(--blue)}
+.kpi-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+.kpi{background:#fff;border-radius:10px;padding:18px 20px;box-shadow:var(--sh)}
+.kpi .lbl{font-size:12px;color:var(--text2);margin-bottom:6px}
+.kpi .val{font-size:26px;font-weight:700;color:var(--blue);line-height:1}
+.kpi .u{font-size:12px;font-weight:400;color:var(--text2);margin-left:2px}
+.kpi .chg{font-size:12px;margin-top:8px;padding:2px 8px;border-radius:10px;display:inline-block}
+.up{color:#34a853;background:#e6f4ea}.dn{color:var(--red);background:#fce8e6}.wn{color:#e37400;background:#fef3e2}
+.charts-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-bottom:24px}
+.cc{background:#fff;border-radius:10px;padding:18px;box-shadow:var(--sh)}
+.cc h3{font-size:11px;font-weight:700;color:var(--text2);margin-bottom:14px;text-transform:uppercase;letter-spacing:.8px}
+.bc{display:flex;align-items:flex-end;height:110px;gap:5px;padding-bottom:22px;border-bottom:2px solid var(--border);position:relative}
+.bw{flex:1;display:flex;flex-direction:column;align-items:center;position:relative;height:100%}
+.b{width:100%;border-radius:3px 3px 0 0;position:absolute;bottom:0;transition:filter .2s}
+.b:hover{filter:brightness(1.15)}
+.blue{background:var(--blue)}.dk{background:#0d47a1}.red{background:var(--red)}.org{background:var(--orange)}.lt{background:#a8c7fa}
+.bl{position:absolute;bottom:-18px;font-size:10px;color:var(--text2);left:50%;transform:translateX(-50%);white-space:nowrap}
+.bv{position:absolute;top:-13px;font-size:9px;color:var(--text2);left:50%;transform:translateX(-50%);white-space:nowrap}
+.prob-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.prob{background:#fff;border-radius:10px;padding:18px;box-shadow:var(--sh);border-top:3px solid var(--red)}
+.prob .pnum{font-size:11px;color:var(--red);font-weight:700;margin-bottom:4px}
+.prob h3{font-size:13px;font-weight:700;color:var(--text);margin-bottom:8px}
+.prob .stat{display:inline-block;background:#fce8e6;color:var(--red);padding:4px 10px;border-radius:6px;font-size:12px;font-weight:600;margin-bottom:10px}
+.prob .desc{font-size:12px;color:var(--text2);line-height:1.75;margin-bottom:10px}
+.cause{background:#fff8e1;border-left:3px solid var(--orange);padding:10px 12px;border-radius:0 6px 6px 0;margin-top:8px}
+.cause strong{font-size:11px;color:#bf360c;display:block;margin-bottom:4px}
+.cause li{font-size:11px;color:#4e342e;line-height:1.9;margin-left:14px}
+.sol-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:24px}
+.sol{background:#fff;border-radius:10px;padding:18px;box-shadow:var(--sh);border-top:3px solid var(--green)}
+.sol .pri{display:inline-block;padding:2px 10px;border-radius:10px;font-size:11px;font-weight:700;margin-bottom:8px}
+.p1{background:#fce8e6;color:var(--red)}.p2{background:#fef3e2;color:#e37400}.p3{background:var(--blue-lt);color:var(--blue)}
+.sol h3{font-size:13px;font-weight:700;margin-bottom:10px;color:var(--text)}
+.sol li{font-size:12px;color:var(--text2);line-height:1.85;margin-left:16px}
+.conclusion{background:linear-gradient(135deg,#e8f0fe,#d2e3fc);border-radius:10px;padding:18px 20px;margin-bottom:24px;border-left:4px solid var(--blue)}
+.conclusion h3{font-size:13px;font-weight:700;color:var(--blue-dk);margin-bottom:8px}
+.conclusion p{font-size:13px;color:#1a3a6b;line-height:1.8}
+.footer{text-align:center;color:var(--text2);font-size:12px;padding:16px 0;border-top:1px solid var(--border)}
+@media(max-width:768px){
+.kpi-grid{grid-template-columns:repeat(2,1fr)}
+.charts-grid,.prob-grid,.sol-grid{grid-template-columns:1fr}
+.header{padding:20px 18px}.header h1{font-size:18px}
+}
+@media(max-width:420px){.kpi-grid{grid-template-columns:1fr}.wrap{padding:12px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<div class="header">
+  <h1>外卖业务数据分析报告</h1>
+  <p>数据周期：2024年1月 — 6月 &nbsp;|&nbsp; 业务类型：外卖平台运营分析</p>
+  <div class="tags">
+    <span class="tag">统计周期：6个月</span>
+    <span class="tag">监控指标：9项</span>
+    <span class="tag">发现异常：3个</span>
+    <span class="tag">分析框架：What → Why → So What</span>
+  </div>
+</div>
+
+<p class="sec">核心业务指标（6月现状 vs 4月峰值对比）</p>
+<div class="kpi-grid">
+  <div class="kpi">
+    <div class="lbl">月度 GMV</div>
+    <div class="val">4758<span class="u">万元</span></div>
+    <div class="chg dn">▼ 较4月峰值 −6.1%</div>
+  </div>
+  <div class="kpi">
+    <div class="lbl">月度订单量</div>
+    <div class="val">122<span class="u">万单</span></div>
+    <div class="chg dn">▼ 较4月峰值 −6.2%</div>
+  </div>
+  <div class="kpi">
+    <div class="lbl">月活跃用户</div>
+    <div class="val">79<span class="u">万人</span></div>
+    <div class="chg dn">▼ 较4月峰值 −7.1%</div>
+  </div>
+  <div class="kpi">
+    <div class="lbl">月新增用户</div>
+    <div class="val">5<span class="u">万人</span></div>
+    <div class="chg wn">▼ 较1月期初 −58.3%</div>
+  </div>
+</div>
+
+<p class="sec">数据趋势图（1月—6月）</p>
+<div class="charts-grid">
+
+  <div class="cc">
+    <h3>GMV 趋势（万元）</h3>
+    <div class="bc">
+      <div class="bw"><div class="b lt" style="height:95%" title="4800万元"></div><span class="bl">1月</span></div>
+      <div class="bw"><div class="b lt" style="height:91%" title="4600万元"></div><span class="bl">2月</span></div>
+      <div class="bw"><div class="b blue" style="height:96%" title="4875万元"></div><span class="bl">3月</span></div>
+      <div class="bw"><div class="b dk" style="height:100%" title="5070万元 峰值"></div><span class="bl">4月</span></div>
+      <div class="bw"><div class="b blue" style="height:98%" title="4992万元"></div><span class="bl">5月</span></div>
+      <div class="bw"><div class="b lt" style="height:94%" title="4758万元"></div><span class="bl">6月</span></div>
+    </div>
+    <p style="font-size:11px;color:var(--text2);margin-top:6px">4月达峰后连续回落，6月降至4758万</p>
+  </div>
+
+  <div class="cc">
+    <h3>订单量趋势（万单）</h3>
+    <div class="bc">
+      <div class="bw"><div class="b lt" style="height:92%" title="120万单"></div><span class="bl">1月</span></div>
+      <div class="bw"><div class="b lt" style="height:88%" title="115万单"></div><span class="bl">2月</span></div>
+      <div class="bw"><div class="b blue" style="height:96%" title="125万单"></div><span class="bl">3月</span></div>
+      <div class="bw"><div class="b dk" style="height:100%" title="130万单 峰值"></div><span class="bl">4月</span></div>
+      <div class="bw"><div class="b blue" style="height:98%" title="128万单"></div><span class="bl">5月</span></div>
+      <div class="bw"><div class="b lt" style="height:94%" title="122万单"></div><span class="bl">6月</span></div>
+    </div>
+    <p style="font-size:11px;color:var(--text2);margin-top:6px">订单量随GMV同步下滑，峰值后未能维持</p>
+  </div>
+
+  <div class="cc">
+    <h3>配送时间 &amp; 投诉率（⚠ 4月异常）</h3>
+    <div class="bc">
+      <div class="bw"><div class="b blue" style="height:76%" title="配送32分钟 / 投诉率1.2%"></div><span class="bl">1月</span></div>
+      <div class="bw"><div class="b blue" style="height:74%" title="配送31分钟 / 投诉率1.1%"></div><span class="bl">2月</span></div>
+      <div class="bw"><div class="b blue" style="height:79%" title="配送33分钟 / 投诉率1.3%"></div><span class="bl">3月</span></div>
+      <div class="bw"><div class="b red" style="height:100%" title="配送42分钟 / 投诉率2.1% — 异常月份！"></div><span class="bl">4月</span></div>
+      <div class="bw"><div class="b org" style="height:90%" title="配送38分钟 / 投诉率1.8%"></div><span class="bl">5月</span></div>
+      <div class="bw"><div class="b org" style="height:86%" title="配送36分钟 / 投诉率1.5%"></div><span class="bl">6月</span></div>
+    </div>
+    <p style="font-size:11px;color:var(--red);margin-top:6px">4月配送时间+27%，投诉率+62%，双指标突变</p>
+  </div>
+
+  <div class="cc">
+    <h3>新客获取趋势（万人）</h3>
+    <div class="bc">
+      <div class="bw"><div class="b dk" style="height:100%" title="新客12万人"></div><span class="bl">1月</span></div>
+      <div class="bw"><div class="b blue" style="height:83%" title="新客10万人"></div><span class="bl">2月</span></div>
+      <div class="bw"><div class="b blue" style="height:92%" title="新客11万人（营销350万）"></div><span class="bl">3月</span></div>
+      <div class="bw"><div class="b lt" style="height:75%" title="新客9万人"></div><span class="bl">4月</span></div>
+      <div class="bw"><div class="b lt" style="height:50%" title="新客6万人"></div><span class="bl">5月</span></div>
+      <div class="bw"><div class="b red" style="height:42%" title="新客5万人 — 较1月跌58%"></div><span class="bl">6月</span></div>
+    </div>
+    <p style="font-size:11px;color:var(--red);margin-top:6px">新客6个月内持续下滑，跌幅达58.3%</p>
+  </div>
+
+</div>
+
+<p class="sec">发现的核心问题 &amp; 根因分析</p>
+<div class="prob-grid">
+
+  <div class="prob">
+    <div class="pnum">问题 01</div>
+    <h3>4月体验质量崩塌</h3>
+    <span class="stat">配送时间 32→42分钟 &nbsp;+27%</span><br>
+    <span class="stat" style="margin-top:4px">投诉率 1.3%→2.1% &nbsp;+62%</span>
+    <p class="desc">4月订单量创下6个月峰值（130万单），但配送时间和投诉率同步异常跳升。此后5—6月虽有回落，至今仍未恢复至1月基准水平。</p>
+    <div class="cause">
+      <strong>根因推断</strong>
+      <ul>
+        <li>订单量骤增，骑手运力未及时补充</li>
+        <li>可能叠加节假日 / 促销爆单效应</li>
+        <li>用户体验受损，引发5—6月留存下滑</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="prob">
+    <div class="pnum">问题 02</div>
+    <h3>新客持续下滑，6个月无反弹</h3>
+    <span class="stat">新客 12万→5万 &nbsp;−58.3%</span>
+    <p class="desc">新客从1月12万连续跌至6月5万，全程无反弹。2—6月连续5个月低于期初水平，且下滑趋势未见收窄迹象，对业务增长构成持续威胁。</p>
+    <div class="cause">
+      <strong>根因推断</strong>
+      <ul>
+        <li>4月体验崩塌导致口碑与自然流量受损</li>
+        <li>市场竞争加剧，自然新增用户被分流</li>
+        <li>产品吸引力不足，复购推荐减少</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="prob">
+    <div class="pnum">问题 03</div>
+    <h3>营销 ROI 严重恶化</h3>
+    <span class="stat">获客成本 1.7万→3.2万/人 &nbsp;+88%</span>
+    <p class="desc">3月营销费用从180万暴增至350万（+94%），但新客仅11万，低于1月自然状态的12万。1—6月累计营销投入约1580万，而新客持续下滑。</p>
+    <div class="cause">
+      <strong>根因推断</strong>
+      <ul>
+        <li>投放渠道效率下降，流量质量变差</li>
+        <li>营销策略未随市场变化及时调整</li>
+        <li>新客引入后留存差，未形成正向循环</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<p class="sec">建议解决方案</p>
+<div class="sol-grid">
+
+  <div class="sol">
+    <span class="pri p1">优先级 P0 · 紧急</span>
+    <h3>修复配送体验，防止再次崩塌</h3>
+    <ul>
+      <li>复盘4月骑手数量、单均距离、天气等数据，找到配送时长突增根因</li>
+      <li>设定预警阈值：配送时间 &gt;35分钟 或 投诉率 &gt;1.5% 自动触发运力补充预案</li>
+      <li>建立节假日/促销期运力储备机制，提前扩充骑手池</li>
+      <li>目标：3个月内将配送时间恢复至32分钟以下</li>
+    </ul>
+  </div>
+
+  <div class="sol">
+    <span class="pri p2">优先级 P1 · 重要</span>
+    <h3>重构营销策略，降低获客成本</h3>
+    <ul>
+      <li>暂停低ROI投放渠道，对各渠道做A/B测试评估真实获客效果</li>
+      <li>将20—30%营销预算转向老用户复购激励（成本更低，ROI更高）</li>
+      <li>分析1月"低投入高新客"时期的来源结构，找到有效渠道并加大投入</li>
+      <li>目标：将单新客获取成本控制在2万元以内</li>
+    </ul>
+  </div>
+
+  <div class="sol">
+    <span class="pri p3">优先级 P2 · 持续</span>
+    <h3>建立业务健康监控体系</h3>
+    <ul>
+      <li>搭建周报监控看板，同步追踪：新客数、配送时间、投诉率、营销ROI</li>
+      <li>设置指标联动预警：任一核心指标连续2周异常，自动升级处理</li>
+      <li>建立用户分层模型，区分高价值老用户 vs 低留存新用户，差异化运营</li>
+      <li>目标：防止业务再次进入"高投入、低产出"的负循环</li>
+    </ul>
+  </div>
+
+</div>
+
+<div class="conclusion">
+  <h3>核心结论</h3>
+  <p>4月是本轮业务下滑的关键转折点。<strong>配送体验崩塌</strong>损害了存量用户留存，<strong>营销ROI持续恶化</strong>导致新客引入失效，两者叠加形成"花更多钱、留更少人"的负循环。破局的关键在于：先修复体验质量、再优化获客效率、最后建立持续监控，缺一不可。</p>
+</div>
+
+<div class="footer">外卖业务数据分析报告 &nbsp;|&nbsp; 数据周期：2024年1月—6月 &nbsp;|&nbsp; 分析框架：What → Why → So What</div>
+
+</div>
+</body>
+</html>
