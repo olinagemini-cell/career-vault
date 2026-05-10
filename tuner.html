@@ -149,31 +149,86 @@ function getStrings(base, key) {
 }
 
 function detectPitch(buf, sr) {
-  // 能量门限：计算信号有效值，太安静就不测
+  // 能量门限
   let sumSq = 0;
   for (let i = 0; i < buf.length; i++) sumSq += buf[i]*buf[i];
   const rms = Math.sqrt(sumSq/buf.length);
-  if (rms < 0.02) return 0; // 太安静了，忽略
+  if (rms < 0.02) return 0;
 
-  // 差分（YIN风格）自相关，对噪音更鲁棒
-  const len = buf.length, half = len/2|0;
-  let diff = new Float32Array(half), minDiff = Infinity;
-  for (let t = 0; t < half; t++) {
-    let s = 0;
-    for (let i = 0; i < half; i++) s += (buf[i] - buf[i+t])**2;
-    diff[t] = s;
-    if (t > 0 && s < minDiff) minDiff = s;
-  }
-  // 累积均值归一化
-  let cumSum = 0;
-  for (let t = 1; t < half; t++) {
-    cumSum += diff[t];
-    const normed = diff[t] / (cumSum / t);
-    if (normed < 0.12) { // 阈值从0.15降到0.12更敏感，但结合归一化实际上更干净
-      // 抛物线插值
-      const d = (diff[t+1]-diff[t-1])/(2*(2*diff[t]-diff[t-1]-diff[t+1]));
-      return sr / (t + d);
+  const len = buf.length;
+  const minLag = Math.round(sr / 300);
+  const maxLag = Math.round(sr / 50);
+
+  // 先算一段能量做归一化
+  let e0 = 0;
+  for (let i = 0; i < len - minLag; i++) e0 += buf[i] * buf[i];
+
+  let bestLag = -1;
+  let bestCorr = -Infinity;
+
+  for (let lag = minLag; lag <= maxLag; lag++) {
+    let corr = 0, eLag = 0;
+    const n = len - lag;
+    for (let i = 0; i < n; i++) {
+      corr += buf[i] * buf[i + lag];
+      eLag += buf[i + lag] * buf[i + lag];
     }
+    const norm = Math.sqrt(e0 * eLag);
+    if (norm < 1e-10) continue;
+    const r = corr / norm;
+    // 找局部最大值
+    if (r > bestCorr) {
+      bestCorr = r;
+      bestLag = lag;
+    }
+  }
+
+  if (bestLag > 0 && bestCorr > 0.3) {
+    // 检查这个lag是否是有效的基频候选（不是倍频）
+    // 简单检查：如果存在一半lag处也有高相关性，说明是倍频
+    for (let sub = 2; sub <= 4; sub++) {
+      const halfLag = Math.round(bestLag / sub);
+      if (halfLag < minLag) break;
+      let corrH = 0, eH = 0;
+      const nH = len - halfLag;
+      for (let i = 0; i < nH; i++) {
+        corrH += buf[i] * buf[i + halfLag];
+        eH += buf[i + halfLag] * buf[i + halfLag];
+      }
+      const normH = Math.sqrt(e0 * eH);
+      if (normH > 1e-10 && (corrH / normH) > bestCorr * 0.85) {
+        // 子谐波也有强相关性 → 用子谐波（这才是真正的基频）
+        bestLag = halfLag;
+        bestCorr = corrH / normH;
+        break;
+      }
+    }
+    // 抛物线插值
+    if (bestLag > minLag && bestLag < maxLag) {
+      const y0 = bestCorr;
+      // 估算相邻点（只算一个差值，用差分近似二阶导）
+      let corrM = 0, eM = 0;
+      const nM = len - (bestLag - 1);
+      for (let i = 0; i < nM; i++) {
+        corrM += buf[i] * buf[i + bestLag - 1];
+        eM += buf[i + bestLag - 1] * buf[i + bestLag - 1];
+      }
+      const ym1 = corrM / (Math.sqrt(e0 * eM) + 1e-10);
+
+      let corrP = 0, eP = 0;
+      const nP = len - (bestLag + 1);
+      for (let i = 0; i < nP; i++) {
+        corrP += buf[i] * buf[i + bestLag + 1];
+        eP += buf[i + bestLag + 1] * buf[i + bestLag + 1];
+      }
+      const yp1 = corrP / (Math.sqrt(e0 * eP) + 1e-10);
+
+      const d = (yp1 - ym1) / (2 * (2 * y0 - ym1 - yp1));
+      if (!isNaN(d) && isFinite(d)) {
+        return sr / (bestLag + d);
+      }
+    }
+    return sr / bestLag;
   }
   return 0;
 }
