@@ -200,7 +200,14 @@ function process() {
       smoothCents = smoothCents*0.75 + c*0.25;
       update(idx, f, smoothCents, tf);
     }
-  } else if (Date.now()-lastTime > 600) idle();
+  } else if (Date.now()-lastTime > 800) {
+    // 超过800ms没检测到稳定音高 → 回到就绪状态
+    // 但保留上次检测到的弦号和指针位置，不归零
+    if (document.getElementById('st').textContent.indexOf('🎧') === -1) {
+      document.getElementById('st').textContent = '等待拨弦...';
+      document.getElementById('dt').textContent = '拨下一根弦继续调音';
+    }
+  }
   lastTime = Date.now();
   anim = requestAnimationFrame(process);
 }
