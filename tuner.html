@@ -149,13 +149,29 @@ function getStrings(base, key) {
 }
 
 function detectPitch(buf, sr) {
-  const len = buf.length, corr = new Float32Array(len/2);
-  let maxC = 0;
-  for (let t = 0; t < corr.length; t++) { let s = 0; for (let i = 0; i < len-t-1; i++) s += buf[i]*buf[i+t]; corr[t]=s; if(s>maxC) maxC=s; }
-  const lo = Math.round(sr/2000), hi = Math.round(sr/50);
-  for (let t = lo; t < hi; t++) {
-    if (corr[t] > 0.15*maxC && corr[t] > corr[t-1] && corr[t] > corr[t+1]) {
-      const d = (corr[t+1]-corr[t-1])/(2*(2*corr[t]-corr[t-1]-corr[t+1]));
+  // 能量门限：计算信号有效值，太安静就不测
+  let sumSq = 0;
+  for (let i = 0; i < buf.length; i++) sumSq += buf[i]*buf[i];
+  const rms = Math.sqrt(sumSq/buf.length);
+  if (rms < 0.02) return 0; // 太安静了，忽略
+
+  // 差分（YIN风格）自相关，对噪音更鲁棒
+  const len = buf.length, half = len/2|0;
+  let diff = new Float32Array(half), minDiff = Infinity;
+  for (let t = 0; t < half; t++) {
+    let s = 0;
+    for (let i = 0; i < half; i++) s += (buf[i] - buf[i+t])**2;
+    diff[t] = s;
+    if (t > 0 && s < minDiff) minDiff = s;
+  }
+  // 累积均值归一化
+  let cumSum = 0;
+  for (let t = 1; t < half; t++) {
+    cumSum += diff[t];
+    const normed = diff[t] / (cumSum / t);
+    if (normed < 0.12) { // 阈值从0.15降到0.12更敏感，但结合归一化实际上更干净
+      // 抛物线插值
+      const d = (diff[t+1]-diff[t-1])/(2*(2*diff[t]-diff[t-1]-diff[t+1]));
       return sr / (t + d);
     }
   }
@@ -181,7 +197,7 @@ function process() {
     let idx = autoMode ? findNearest(f, currentBase, currentMode) : (activeIdx>=0 ? activeIdx : findNearest(f, currentBase, currentMode));
     if (autoMode || activeIdx >= 0) {
       const tf = ss[idx].freq, c = centsOff(f, tf);
-      smoothCents = smoothCents*0.55 + c*0.45;
+      smoothCents = smoothCents*0.75 + c*0.25;
       update(idx, f, smoothCents, tf);
     }
   } else if (Date.now()-lastTime > 600) idle();
