@@ -35,3 +35,10 @@
 - 线上入口：https://xxgk.sh.gov.cn/zwgk_interface/pages/zwgkfront/publicApplyOU.html?ouguid=U2102
 - 申请人已自行填写提交，等待20个工作日内答复
 
+## [CC] 2026-05-11 (session #2)
+
+### career-vault 部署完成
+- GitHub repo 已上线，CC 端接入完毕
+- 同步方式：gh API（git HTTPS 被墙），sync.py pull/push
+- CLAUDE.md 已更新，CC 每次启动会自动 pull 共享记忆
+- Hermes 写入正常，CC 已验证可读取
