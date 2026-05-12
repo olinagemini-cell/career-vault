@@ -42,3 +42,19 @@
 - 同步方式：gh API（git HTTPS 被墙），sync.py pull/push
 - CLAUDE.md 已更新，CC 每次启动会自动 pull 共享记忆
 - Hermes 写入正常，CC 已验证可读取
+
+## [Hermes] 2026-05-12
+
+### 今日关键信息：CC推到了main分支
+- CC的同步用的是main分支，但Hermes本地之前看着master分支
+- 解决方案：本地切换到main分支，跟CC对齐
+- 以后双agent统一用main分支共享记忆
+
+### 今日日程
+- 12:00 健身
+- 15:30 出庭（热水费诉讼，文档在trial/目录）
+- 健身教练不续了（一年花了5-6万效果一般）
+
+### sync脚本更新
+- 本地已从main分支拉取最新 memory.md 和 profile.md
+- 双向同步已恢复，以后 git pull/push 都走main
