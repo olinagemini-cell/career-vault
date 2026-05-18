@@ -1,0 +1,212 @@
+{
+  "main": {
+    "id": "bd6e2ab65a8d5859",
+    "type": "split",
+    "children": [
+      {
+        "id": "dde3bd2e1851c376",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4bf467933305bf00",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "关系图谱"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f23e143f19f23c2c",
+    "type": "split",
+    "children": [
+      {
+        "id": "4506ab649f65836f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "980d156d56d75425",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "1172dc2a88b4328f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "995150e213034ca8",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "right": {
+    "id": "58324ecaca066b3c",
+    "type": "split",
+    "children": [
+      {
+        "id": "e0b1f671e3eaf24d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "82532c19415d5aab",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "反向链接"
+            }
+          },
+          {
+            "id": "450ed4086ae85d87",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "出链"
+            }
+          },
+          {
+            "id": "2bbb85cffb27a1b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "2a3746f9aeca9d82",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "e3f45471f6c48437",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "4bf467933305bf00",
+  "lastOpenFiles": [
+    "我的简历/CN/~$版_高级PM_Implementation.docx",
+    "我的简历/CN/~$版_PMO_项目总监.docx",
+    "我的简历/CN/通用版_PMO_项目总监.docx",
+    "我的简历/CN/通用版_商业IT_PM_BA.docx",
+    "我的简历/CN/通用版_高级PM_Implementation.docx",
+    "我的简历/CN/~$版_高级PM_Implementation.md",
+    "我的简历/CN/~$通用简历_V2.docx",
+    "我的简历/CN/~WRD0003.tmp",
+    "我的简历/CN/~$版_PMO_项目总监.md",
+    "我的简历/EN/General_CV_PMO_Program_Director.md",
+    "我的简历/CN/通用版_PMO_项目总监.md",
+    "我的简历/EN/General_CV_Senior_Implementation_PM.md",
+    "我的简历/CN/通用版_高级PM_Implementation.md",
+    "我的简历/EN/General_CV_Commercial_IT_PM_BA.md",
+    "我的简历/CN/通用版_商业IT_PM_BA.md",
+    "我的简历/CN/~$_汇丰_Implementation_Manager_定向.docx",
+    "我的简历/EN/Olina_SH_Impl.pdf",
+    "我的简历/EN/Olina_SH_Implementation_Manager.pdf",
+    "我的简历/EN/Olina_SH_Implementation_Manager (2).pdf",
+    "我的简历/CN/PMO_Manager_定向_保乐力加.md",
+    "我的简历/EN/Targeted_CV_HSBC_Implementation_Manager.md",
+    "我的简历/CN/简历_汇丰_Implementation_Manager_定向.md",
+    "MD/能力-JD关系索引.md",
+    "我的简历/skill-modules/CN/BA经验深度挖掘框架.md",
+    "未命名.canvas",
+    "JD/外企/Centific_商业IT项目经理_BA混合_1981836493.md",
+    "PM-Copilot/knowledge_base/01_问题树思维模式_精华版.md",
+    "简历模块化设计方案.md",
+    "OBSIDIAN_CC_GUIDE.md",
+    "MD/跳槽简历重构_进展与思路存档.md"
+  ]
+}

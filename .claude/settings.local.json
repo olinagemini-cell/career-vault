@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"from docx import Document; doc = Document\\('刘小妍-商业IT_PM_BA.docx'\\); [print\\(p.text\\) for p in doc.paragraphs]\")",
+      "Bash(python -c ' *)",
+      "Read(//tmp/**)",
+      "Bash(pip list *)",
+      "Bash(python)",
+      "Bash(python update_resumes.py)",
+      "mcp__lark-mcp__bitable_v1_app_create",
+      "mcp__lark-mcp__bitable_v1_appTable_list",
+      "mcp__lark-mcp__docx_builtin_search",
+      "mcp__lark-mcp__bitable_v1_appTable_create",
+      "mcp__lark-mcp__bitable_v1_appTableRecord_create",
+      "Bash(python ../../../md2docx/md2docx.py \"刘小妍_上海_强生医疗_IT项目经理_CN.md\")",
+      "Bash(python ../../../../md2docx/md2docx.py \"刘小妍_上海_强生医疗_IT项目经理_CN.md\")",
+      "Bash(python ../../../../md2docx/md2docx.py \"刘小妍_上海_强生医疗_IT项目经理_EN.md\")",
+      "Bash(python *)",
+      "Bash(iconv -f utf-8 -t utf-8)",
+      "Read(//c/Users/olina/**)",
+      "Read(//d//**)",
+      "Read(//e//**)",
+      "Read(//f//**)",
+      "WebFetch(domain:www.liepin.com)",
+      "Bash(dir /s /b \"c:\\\\Users\\\\olina\\\\.claude\\\\skills\")",
+      "WebFetch(domain:www.linkedin.com)",
+      "Bash(cp \"C:/Users/olina/Desktop/Improve/简历库/_Archive/05/DuPont/\"*\".md\" \"C:/Users/olina/Desktop/Improve/简历库/_Archive/05月/DuPont/\")",
+      "Bash(cp \"C:/Users/olina/Desktop/Improve/简历库/_Archive/05/DuPont/\"*\".docx\" \"C:/Users/olina/Desktop/Improve/简历库/_Archive/05月/DuPont/\")",
+      "Bash(PYTHONUTF8=1 python *)",
+      "mcp__tavily__tavily_search"
+    ]
+  }
+}
