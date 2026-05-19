@@ -29,23 +29,16 @@ PMO Lead with extensive experience in cross-border program delivery and stakehol
 ### NCR Corporation | Shanghai
 **Program Manager, PMO** | Sep 2016 – Nov 2022 (6 years 2 months)
 
-*Managed $50M+ IT delivery portfolio across Greater China (Mainland, Hong Kong, Taiwan), overseeing 15+ concurrent projects.*
+*Managed $50M+ IT delivery portfolio across Greater China, overseeing 15+ concurrent projects.*
 
-**Stakeholder Management & Adoption:**
-- Led EPM (Enterprise Project Management) system rollout in China: delivered **95% user adoption within 3 months**, 30% manpower resource savings, zero data migration incidents
-- Established cross-functional communication channels between sales, operations, and development teams
-- Coordinated cross-portfolio requirements consolidation, reducing development redundancy and optimizing engineering capacity utilization
-
-**Portfolio & Resource Governance:**
-- Optimized resource allocation across 15+ parallel projects, achieving 3 consecutive years (2019-2021) of ROI ranking #1 in APAC
-- Applied data-driven analytics to consolidate cross-customer requirements and optimize engineering capacity utilization
-- 20+ production releases with zero critical deployment failures; 3-year audit period with zero financial compliance incidents
+**Stakeholder Management & Governance:**
+- Led EPM system rollout in China: **95% user adoption within 3 months**, 30% manpower savings, zero data migration incidents
+- Optimized resource allocation across 15+ parallel projects, achieving **3 consecutive years ROI #1 in APAC** ($50M+ portfolio)
+- Established cross-functional communication channels between sales, operations, and development teams; reduced development redundancy through cross-portfolio requirements consolidation
 
 **Cost Optimization & Process Standardization:**
-- Led Yum! (KFC/Pizza Hut) East China business transformation, delivering 5% spare parts warehouse cost savings and 20% labor cost reduction
-- Developed and executed vendor scorecard and SLA analysis framework to improve service delivery quality
-- Transformation framework replicated to 3 additional accounts
-- Established standardization frameworks using Lean Six Sigma Yellow Belt methodology for problem-solving
+- Led Yum! East China transformation: **5% warehouse cost savings, 20% labor cost reduction**; framework replicated to 3 additional accounts
+- Developed vendor scorecard and SLA framework; established Lean Six Sigma Yellow Belt standardization; 20+ releases with zero critical failures; 3-year zero-compliance-incident audit record
 
 ---
 

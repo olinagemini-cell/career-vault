@@ -29,23 +29,16 @@ PMO Lead with extensive experience in portfolio governance, supply chain optimiz
 ### NCR Corporation | Shanghai
 **Program Manager, PMO** | Sep 2016 – Nov 2022 (6 years 2 months)
 
-*Managed $50M+ IT delivery portfolio across Greater China (Mainland, Hong Kong, Taiwan), overseeing 15+ concurrent projects.*
+*Managed $50M+ IT delivery portfolio across Greater China, overseeing 15+ concurrent projects.*
 
-**Supply Chain & Cost Optimization:**
-- Led Yum! (KFC/Pizza Hut) East China business transformation, delivering **5% spare parts warehouse cost savings** and **20% labor cost reduction**
-- Developed and executed **vendor scorecard and SLA analysis framework** to improve service delivery quality
-- Transformation framework replicated to 3 additional accounts
-- Applied data-driven analytics to optimize **capacity planning** across cross-customer requirements
-
-**Portfolio & Resource Governance:**
-- Optimized resource allocation across 15+ parallel projects, achieving 3 consecutive years (2019-2021) of ROI ranking #1 in APAC
-- Integrated cross-customer requirements to reduce development redundancy and optimize engineering capacity utilization
-- Established cross-functional communication channels between sales, operations, and development teams
+**Supply Chain & Portfolio Governance:**
+- Optimized resource allocation across 15+ parallel projects, achieving **3 consecutive years ROI #1 in APAC** ($50M+ portfolio)
+- Led Yum! East China transformation: **5% warehouse cost savings, 20% labor cost reduction**; framework replicated to 3 additional accounts
+- Developed vendor scorecard and SLA framework; applied data-driven analytics for capacity planning across cross-customer requirements
 
 **System Rollout & Process Standardization:**
-- Led EPM (Enterprise Project Management) system rollout in China: delivered 30% manpower resource savings, zero data migration incidents, and 95% user adoption within 3 months
-- Established standardization frameworks using Lean Six Sigma Yellow Belt methodology for problem-solving
-- 20+ production releases with zero critical deployment failures; 3-year audit period with zero financial compliance incidents
+- Led EPM system rollout in China: **95% user adoption within 3 months**, 30% manpower savings, zero data migration incidents
+- Established Lean Six Sigma Yellow Belt standardization frameworks; 20+ production releases with zero critical failures; 3-year zero-compliance-incident audit record
 
 ---
 
