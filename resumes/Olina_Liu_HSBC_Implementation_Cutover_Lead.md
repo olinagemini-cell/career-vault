@@ -20,10 +20,8 @@ Strategic Program Leader with extensive experience architecting and executing la
 
 - **Architected and led China's first complete rollout of the global ONE Platform** — defined the overall implementation and cutover strategy including parallel run planning, worst-case scenario contingency, and post-go-live hypercare operating model. Achieved **100% business utilization within 2 months**, becoming the first entity globally to achieve full system rollout
 - Deployment strategy **adopted as global replicable template** by HQ, securing second-phase investment commitment; concurrently drove 70% operational cost reduction roadmap through structured change management
-- Served as single point of contact for leadership on implementation strategy and execution; produced steering committee-level communications and status reporting for COO and global stakeholders
-- Managed complex interdependencies across business, local IT, and HQ technology teams; interlocked BAU change with broader program planning to ensure seamless transition
-- Delivered PIPL compliance workstream with local legal counsel and HQ data protection teams, maintaining **zero compliance violations** (3+ years in regulated banking environment)
-- Established structured PM knowledge frameworks across program lifecycle, driving **20-25% efficiency improvement** in delivery
+- Served as single point of contact for leadership on strategy and execution, managing complex cross-functional interdependencies across business, local IT, and HQ technology teams; produced steering committee-level communications and status reporting to COO
+- Delivered PIPL compliance workstream, maintaining **zero compliance violations** (3+ years) in regulated banking environment; established structured PM frameworks driving **20-25% efficiency improvement** across program lifecycle
 
 ---
 
