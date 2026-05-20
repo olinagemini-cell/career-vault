@@ -70,6 +70,5 @@ Program Manager with extensive cross-industry experience in driving project sele
 ## Certifications
 
 - **PMP** (Project Management Professional) | Dec 2018
-- **ITIL Foundation** | Dec 2021
 - **Lean Six Sigma Yellow Belt** | Oct-Nov 2015
 - **Large Model Application Development Engineer** (In Progress) | IITC, 2025-2026
