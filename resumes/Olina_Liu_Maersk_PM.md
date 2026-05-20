@@ -72,5 +72,4 @@ Program Manager with extensive cross-industry experience in driving project sele
 - **PMP** (Project Management Professional) | Dec 2018
 - **ITIL Foundation** | Dec 2021
 - **Lean Six Sigma Yellow Belt** | Oct-Nov 2015
-- **AI Application Engineer (Junior)** | Ministry of Industry and Information Technology
 - **Large Model Application Development Engineer** (In Progress) | IITC, 2025-2026
