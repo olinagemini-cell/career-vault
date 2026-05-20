@@ -30,11 +30,9 @@ Strategic Program Leader with extensive experience architecting and executing la
 
 *Managed $50M+ IT delivery portfolio across Greater China, with P&L ownership and strategic resource allocation across 15+ concurrent workstreams.*
 
-- **Led portfolio-level strategic planning and resource prioritization** — achieved **3 consecutive years ROI #1 in APAC** ($50M+ portfolio) through rigorous gap analysis, scenario planning, and proactive risk mitigation
+- **Led portfolio-level strategic planning and resource prioritization** — achieved **3 consecutive years ROI #1 in APAC** ($50M+ portfolio) through rigorous gap analysis, scenario planning, and proactive risk mitigation; engaged stakeholders at VP/director level for strategic alignment
 - Drove enterprise-level EPM system rollout in China: defined implementation strategy covering parallel run, data migration contingency, and post-go-live support; **95% user adoption within 3 months**, zero data migration incidents
-- Led Yum! East China transformation program: **5% warehouse cost savings, 20% labor cost reduction**; framework replicated to 3 additional accounts
-- Established standardized governance frameworks (Lean Six Sigma Yellow Belt); 20+ production releases with zero critical failures; 3-year zero-compliance-incident record
-- Engaged and influenced stakeholders at VP and director level across business and technology functions, ensuring strategic alignment and transparent communication
+- Led Yum! East China transformation program: **5% warehouse cost savings, 20% labor cost reduction**; framework replicated to 3 additional accounts; established Lean Six Sigma Yellow Belt governance — 20+ production releases with zero critical failures
 
 ---
 
