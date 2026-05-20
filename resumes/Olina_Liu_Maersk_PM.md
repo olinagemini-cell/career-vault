@@ -28,16 +28,12 @@ Program Manager with extensive cross-industry experience in driving project sele
 ### NCR Corporation | Shanghai
 **Program Manager, PMO** | Sep 2016 – Nov 2022
 
-*Managed $50M+ IT delivery portfolio across Greater China, overseeing 15+ concurrent projects through structured prioritization and resource allocation.*
+*Managed $50M+ IT delivery portfolio across Greater China, overseeing 15+ concurrent projects.*
 
-**Portfolio Governance & Prioritization:**
 - **Optimized resource allocation and project prioritization across 15+ parallel projects**, achieving **3 consecutive years ROI #1 in APAC** ($50M+ portfolio)
+- Led EPM system rollout in China: **95% user adoption within 3 months**, 30% manpower savings, zero data migration incidents
 - Led Yum! East China transformation: **5% warehouse cost savings, 20% labor cost reduction**; framework replicated to 3 additional accounts
-- Developed vendor scorecard and SLA framework, embedding performance tracking into operational governance
-
-**System Implementation & Adoption:**
-- Led EPM system rollout in China: **95% user adoption within 3 months**, 30% manpower savings, zero data migration incidents — ensuring smooth transition and sustained daily usage
-- Established standardization frameworks via Lean Six Sigma Yellow Belt; 20+ production releases with zero critical failures; 3-year zero-compliance-incident audit record
+- Established Lean Six Sigma Yellow Belt frameworks; 20+ production releases with zero critical failures; 3-year zero-compliance-incident audit record
 
 ---
 
