@@ -22,11 +22,11 @@
 
 #### 外资保险（最大盲区）
 
-| 公司 | 优先级 | 理由 | 行动 |
-|------|--------|------|------|
-| **AXA (安盛)** | P0 | 法资保险，IT PM (APAC, Shanghai or HK) 确认有岗 | 今晚搜LinkedIn/猎聘 |
-| **AIA (友邦)** | P0 | 数字化转型投入大，技术管理岗活跃 | 今晚搜 |
-| **Allianz (安联)** | P1 | 德资保险，中国业务活跃 | 本周搜 |
+| 公司 | 优先级 | 理由 | 行动 | 状态 |
+|------|--------|------|------|------|
+| **AXA (安盛)** | P0 | 法资保险，IT PM (APAC, Shanghai or HK) 确认有岗 | 今晚搜LinkedIn/猎聘 | ❌ 搜完暂无对应上海岗位 |
+| **AIA (友邦)** | P0 | 数字化转型投入大，技术管理岗活跃 | ✅ 已投OA Manager岗 |
+| **Allianz (安联)** | P1 | 德资保险，中国业务活跃 | 待搜 |
 | **Prudential (英国保诚)** | P2 | 亚洲主战场 | 入池 |
 | **Manulife (宏利)** | P2 | 亚太base香港，上海有岗 | 入池 |
 | **Zurich (苏黎世)** | P2 | 瑞士保险，合规契合 | 入池 |
@@ -35,17 +35,17 @@
 
 #### 外资银行
 
-| 公司 | 优先级 | 理由 |
-|------|--------|------|
-| **BNP Paribas** | P0 | 法资同行，BPCE故事直接平移 |
-| **HSBC** | 已推进 | 已有assessment，等推进 |
-| **Standard Chartered (渣打)** | P1 | 英资，亚太重镇 |
-| **Société Générale (法兴)** | P1 | 法资同行 |
-| **Deutsche Bank (德银)** | P2 | 上海科技中心 |
-| **ING** | P2 | 数字化转型活跃 |
-| **Citi (花旗)** | P3 | 入池 |
-| **DBS (星展)** | P3 | 入池 |
-| **OCBC (华侨银行)** | P3 | 入池 |
+| 公司 | 优先级 | 理由 | 状态 |
+|------|--------|------|------|
+| **BNP Paribas** | P0 | 法资同行，BPCE故事直接平移 | ❌ 搜完暂无对口IT PM岗位 |
+| **HSBC** | 已推进 | 已有assessment，等推进 | ⏳ |
+| **Standard Chartered (渣打)** | P1 | 英资，亚太重镇 | ❌ 搜完科技岗很少，已关注 |
+| **Société Générale (法兴)** | P1 | 法资同行 | 待摸 |
+| **Deutsche Bank (德银)** | P2 | 上海科技中心 | 入池 |
+| **ING** | P2 | 数字化转型活跃 | 入池 |
+| **Citi (花旗)** | P3 | 入池 | 入池 |
+| **DBS (星展)** | P3 | 入池 | 入池 |
+| **OCBC (华侨银行)** | P3 | 入池 | 入池 |
 
 ### 🟡 赛道②：Finance Systems PM（新发现蓝海）
 
@@ -61,11 +61,11 @@
 
 #### 药企/消费品 Finance IT
 
-| 公司 | 优先级 | 理由 |
-|------|--------|------|
-| **J&J Finance IT** | P0 | 已有JD分析，直接投 |
-| **Roche / Novartis Finance Systems** | P1 | 医药Finance Transformation项目多 |
-| **联合利华/雀巢/欧莱雅 Finance IT** | P2 | 消费品，ERP上线的需求一直在 |
+| 公司 | 优先级 |
+|------|--------|
+| **J&J Finance IT** | P0 |
+| **Roche / Novartis Finance Systems** | P1 |
+| **联合利华/雀巢/欧莱雅 Finance IT** | P2 |
 
 ### 🟢 赛道③：Chief of Staff / COO Office
 
@@ -77,37 +77,66 @@
 - 战略运营总监
 - 总经理办公室
 
+### 🔵 赛道④：乙方IT公司（新增2026-05-21）
+
+#### 目标公司
+
+| 梯队 | 公司 | 岗位方向 |
+|------|------|---------|
+| 🔴 P0 | **Accenture** | Delivery Manager / Program Manager / Engagement Manager |
+| 🔴 P0 | **Capgemini** | Program Manager / Service Delivery Lead |
+| 🔴 P0 | **Infosys** | Program Manager / Delivery Lead |
+| 🔴 P0 | **Tata Consulting (TCS)** | Engagement Manager / Program Manager |
+| 🟡 P1 | **Deloitte Consulting IT Advisory** | IT Transformation Manager |
+| 🟡 P1 | **PwC Advisory Digital** | Digital Delivery Manager |
+| 🟡 P1 | **EY Advisory** | Technology Consulting Manager |
+| 🟡 P1 | **Wipro / HCL / Tech Mahindra** | Delivery Manager |
+| 🟢 P2 | **NTT Data / Fujitsu / Cognizant** | Program Manager |
+| 🟢 P2 | 国内乙方（中软国际/文思海辉/软通动力） | 薪资天花板低，备选 |
+
+#### 为什么适合
+
+- 懂甲方真正要什么（被乙方欺负过的甲方PM → 最懂管控expectation）
+- $50M+ portfolio管理经验 → 交付规模证明
+- 14年跨行业经验 → 金融/制造/医药都能讲
+- BA能力+商业论证 → 售前/解决方案也能打
+
 ---
 
 ## 三、行动路线图
 
 ### 今晚（5/21）
 
+| # | 行动项 | 归属赛道 | 状态 |
+|---|--------|---------|------|
+| 1 | LinkedIn搜AXA上海IT PM/PMO岗位 | ① | ✅ 无对口 |
+| 2 | LinkedIn搜AIA上海IT PM/PMO/数字转型岗位 | ① | ✅ 已投 |
+| 3 | LinkedIn搜BNP上海E2E Coordinator/PM岗位 | ① | ✅ 无对口 |
+| 4 | 搜渣打上海IT PM岗位 | ① | ✅ 科技岗少，先关注 |
+
+### 明天（5/22，WFH）
+
 | # | 行动项 | 归属赛道 |
 |---|--------|---------|
-| 1 | LinkedIn搜AXA上海IT PM/PMO岗位 | ① |
-| 2 | LinkedIn搜AIA上海IT PM/PMO/数字转型岗位 | ① |
-| 3 | LinkedIn搜BNP上海E2E Coordinator/PM岗位 | ① |
-| 4 | LinkedIn搜"Finance Systems PM" / "Finance Transformation" + Shanghai | ② |
-| 5 | 猎聘搜以上关键词 | ①② |
+| 1 | 搜Accenture上海Delivery Manager / Program Manager | ④ |
+| 2 | 搜Capgemini上海Program Manager / Delivery Lead | ④ |
+| 3 | 搜Infosys/TCS上海同类岗位 | ④ |
+| 4 | 继续扫Allianz/Prudential/Zurich | ① |
+| 5 | 如有余力，搜赛道② Finance Systems PM | ② |
 
 ### 本周（5/22-5/24）
 
 | # | 行动项 | 归属赛道 |
 |---|--------|---------|
-| 1 | 设LinkedIn Alert：AXA/AIA/BNP/渣打 + PM/PMO/Transformation | ① |
-| 2 | 设LinkedIn Alert：Finance Systems Manager / Finance Transformation PM | ② |
-| 3 | 设LinkedIn Alert：Chief of Staff / Strategy Operations | ③ |
-| 4 | 搜到活的JD投第一批（目标3-5家） | ①②③ |
-| 5 | 注册各公司talent pool | ①② |
+| 1 | 设LinkedIn Alert各赛道关键词 | ①②③④ |
+| 2 | 如有活的JD，投第一批（目标3-5家） | 全部 |
 
 ### 下周（5/25-5/31）
 
 | # | 行动项 |
 |---|--------|
 | 1 | 第一批投完，等反馈周期（1-2周） |
-| 2 | 摸Allianz/Zurich/Prudential/Manulife |
-| 3 | Big 4 Advisory方向联系猎头 |
+| 2 | Big 4 Advisory方向联系猎头 |
 
 ### 6月初
 
@@ -152,6 +181,19 @@ level—managing board-level communication, portfolio governance,
 and org-wide strategic initiatives...
 ```
 → 强调：高管接口 + 跨部门协调 + 战略视角
+
+### ④ 乙方IT公司版
+
+```
+Program / Delivery Manager with 14 years managing enterprise-scale 
+IT delivery programs across banking, manufacturing, and life sciences 
+from both client-side and vendor-facing perspectives. Proven track 
+record of overseeing $50M+ portfolios, driving global system rollouts, 
+and managing cross-functional teams across APAC. Deep understanding 
+of what makes client engagements succeed—from governance and SLA 
+management to stakeholder expectation control...
+```
+→ 强调：双视角（甲方+乙方经验）+ 交付规模 + 客户管理
 
 ---
 
