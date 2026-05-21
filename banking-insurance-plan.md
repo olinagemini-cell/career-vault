@@ -1,92 +1,165 @@
 # 外资银行+保险 · 投递规划
 
-> 生成时间：2026-05-21
-> 背景：30-50投反馈率2-4%（仅HSBC回应），Claude建议集中行业打，用户同意转向外资银行+保险
+> 生成时间：2026-05-21 | 基于Claude模块库分析 + 赛道重组
 
 ---
 
-## 一、优先级清单
+## 一、核心结论
 
-### 🔴 第一梯队：法资同行（故事零损耗）
+三条线同时推进，共享简历骨架，只微调Summary头两句。
 
-| 公司 | 优先级 | 理由 | 上海岗位现状 |
-|------|--------|------|-------------|
-| **BNP Paribas** | P0 | 法资同行，BPCE故事直接平移 | 目前上海公开IT PM/PMO类岗位不多，有E2E Coordinator岗可看桥接空间 |
-| **AXA (安盛)** | P0 | 法资保险，法资叙事无缝衔接 | 确认有IT Project Manager (APAC, Shanghai or HK) 岗位，直接标的 |
-| **Société Générale (法兴)** | P1 | 法资同行，PMO主要在GSC但中国区可关注 | 中国区招聘页面有，IT PM可能走猎头渠道 |
-| **HSBC** | 已推进 | 已有assessment，等推进 | 继续等消息 |
-
-### 🟡 第二梯队：外资保险（最大盲区，竞争最低）
-
-| 公司 | 优先级 | 理由 | 备注 |
-|------|--------|------|------|
-| **AIA (友邦)** | P0 | 数字化转型投入大，IT PM类岗位活跃 | Linkedin上有Senior Manager/Architect等方向 |
-| **Allianz (安联)** | P1 | 德资保险，中国业务活跃 | 需进一步摸岗 |
-| **Prudential (英国保诚)** | P2 | 亚洲主战场，数字化创新岗多 | 需进一步摸岗 |
-| **Manulife (宏利)** | P2 | 亚太base在香港，上海/北京有岗 | 入池 |
-| **Zurich (苏黎世)** | P2 | 瑞士保险，合规契合度高 | 入池 |
-| **MetLife (大都会人寿)** | P2 | 美国保险，上海有运营中心 | 入池 |
-| **Swiss Re (瑞士再保险)** | P3 | 再保险特殊赛道，合规背景契合 | 备选 |
-
-### 🟢 第三梯队：其他外资银行
-
-| 公司 | 优先级 | 理由 | 备注 |
-|------|--------|------|------|
-| **Standard Chartered (渣打)** | P1 | 英资，亚太重镇，中国有3亿美元投资计划 | 注册talent pool设alert |
-| **Deutsche Bank (德银)** | P2 | 上海科技中心 | 入池 |
-| **ING** | P2 | 荷兰行，数字化转型活跃 | 入池 |
-| **Citi (花旗)** | P3 | 美资，上海有hub | 入池 |
-| **DBS (星展)** | P3 | 亚洲最强数字化银行之一 | 入池 |
-| **OCBC (华侨银行)** | P3 | 新加坡行，跨境合规需求强 | 入池 |
+| 序号 | 赛道 | 优先级 | 核心卖点 | 目标公司类型 |
+|------|------|--------|---------|-------------|
+| ① | **外资保险/银行 IT BRM** | P0 | 法资同行故事 + 合规交付 | AXA、AIA、BNP、渣打、Allianz |
+| ② | **Finance Systems PM** | P0 | 会计学士 + P&L + ERP = 稀缺组合 | Big 4 Advisory Finance Consulting、药企Finance IT |
+| ③ | **Chief of Staff / COO Office** | P1 | 直接汇报COO 3年 = 现成素材 | MNC中国区COO Office、保险/银行战略办 |
 
 ---
 
-## 二、行动路线图
+## 二、行业清单
 
-### 本周（5/21-5/24）
+### 🔴 赛道①：外资保险/银行 IT BRM
 
-| # | 行动项 | 渠道 | 状态 |
-|---|--------|------|------|
-| 1 | LinkedIn搜索AXA上海IT PM/PMO岗位 | Linkedin/猎聘 | ⏳ 待操作 |
-| 2 | LinkedIn搜索AIA上海IT PM/PMO/数字转型岗位 | Linkedin/猎聘 | ⏳ 待操作 |
-| 3 | LinkedIn设Alert：AXA + Shanghai + Project Manager/PMO | Linkedin | ⏳ 待操作 |
-| 4 | LinkedIn设Alert：AIA + Shanghai + IT PM/PMO/Digital | Linkedin | ⏳ 待操作 |
-| 5 | LinkedIn设Alert：BNP Paribas + Shanghai + Project/PMO/E2E | Linkedin | ⏳ 待操作 |
-| 6 | LinkedIn设Alert：Standard Chartered + Shanghai + Project/Programme | Linkedin | ⏳ 待操作 |
-| 7 | 猎聘搜AXA/AIA/BNP上海岗位 | 猎聘 | ⏳ 待操作 |
+#### 外资保险（最大盲区）
+
+| 公司 | 优先级 | 理由 | 行动 |
+|------|--------|------|------|
+| **AXA (安盛)** | P0 | 法资保险，IT PM (APAC, Shanghai or HK) 确认有岗 | 今晚搜LinkedIn/猎聘 |
+| **AIA (友邦)** | P0 | 数字化转型投入大，技术管理岗活跃 | 今晚搜 |
+| **Allianz (安联)** | P1 | 德资保险，中国业务活跃 | 本周搜 |
+| **Prudential (英国保诚)** | P2 | 亚洲主战场 | 入池 |
+| **Manulife (宏利)** | P2 | 亚太base香港，上海有岗 | 入池 |
+| **Zurich (苏黎世)** | P2 | 瑞士保险，合规契合 | 入池 |
+| **MetLife (大都会人寿)** | P2 | 上海运营中心 | 入池 |
+| **Swiss Re (瑞士再保险)** | P3 | 备选 | 备选 |
+
+#### 外资银行
+
+| 公司 | 优先级 | 理由 |
+|------|--------|------|
+| **BNP Paribas** | P0 | 法资同行，BPCE故事直接平移 |
+| **HSBC** | 已推进 | 已有assessment，等推进 |
+| **Standard Chartered (渣打)** | P1 | 英资，亚太重镇 |
+| **Société Générale (法兴)** | P1 | 法资同行 |
+| **Deutsche Bank (德银)** | P2 | 上海科技中心 |
+| **ING** | P2 | 数字化转型活跃 |
+| **Citi (花旗)** | P3 | 入池 |
+| **DBS (星展)** | P3 | 入池 |
+| **OCBC (华侨银行)** | P3 | 入池 |
+
+### 🟡 赛道②：Finance Systems PM（新发现蓝海）
+
+#### Big 4 Advisory
+
+| 公司 | 优先级 | 理由 |
+|------|--------|------|
+| **PwC Advisory - Finance Consulting** | P0 | 会计学位 + IT PM = 高配，Finance Transformation团队最对口 |
+| **Deloitte Consulting - Finance & Enterprise Performance** | P0 | 同理，SAP/Oracle Finance模块项目多 |
+| **EY Advisory - Finance Transformation** | P1 | 同理 |
+| **KPMG Advisory - Finance Transformation** | P1 | 同理 |
+| **Accenture - Finance & Risk** | P2 | 入池 |
+
+#### 药企/消费品 Finance IT
+
+| 公司 | 优先级 | 理由 |
+|------|--------|------|
+| **J&J Finance IT** | P0 | 已有JD分析，直接投 |
+| **Roche / Novartis Finance Systems** | P1 | 医药Finance Transformation项目多 |
+| **联合利华/雀巢/欧莱雅 Finance IT** | P2 | 消费品，ERP上线的需求一直在 |
+
+### 🟢 赛道③：Chief of Staff / COO Office
+
+无固定公司清单——看到JD就投。搜索关键词：
+- Chief of Staff（MNC中国区）
+- Strategy & Operations Manager
+- Business Operations Lead
+- COO Office Manager
+- 战略运营总监
+- 总经理办公室
+
+---
+
+## 三、行动路线图
+
+### 今晚（5/21）
+
+| # | 行动项 | 归属赛道 |
+|---|--------|---------|
+| 1 | LinkedIn搜AXA上海IT PM/PMO岗位 | ① |
+| 2 | LinkedIn搜AIA上海IT PM/PMO/数字转型岗位 | ① |
+| 3 | LinkedIn搜BNP上海E2E Coordinator/PM岗位 | ① |
+| 4 | LinkedIn搜"Finance Systems PM" / "Finance Transformation" + Shanghai | ② |
+| 5 | 猎聘搜以上关键词 | ①② |
+
+### 本周（5/22-5/24）
+
+| # | 行动项 | 归属赛道 |
+|---|--------|---------|
+| 1 | 设LinkedIn Alert：AXA/AIA/BNP/渣打 + PM/PMO/Transformation | ① |
+| 2 | 设LinkedIn Alert：Finance Systems Manager / Finance Transformation PM | ② |
+| 3 | 设LinkedIn Alert：Chief of Staff / Strategy Operations | ③ |
+| 4 | 搜到活的JD投第一批（目标3-5家） | ①②③ |
+| 5 | 注册各公司talent pool | ①② |
 
 ### 下周（5/25-5/31）
 
-| # | 行动项 | 预期成果 |
-|---|--------|---------|
-| 1 | 注册各公司talent pool（AXA/渣打/法兴/AIA/Manulife） | 进入猎头雷达 |
-| 2 | 如搜到对口的，投AXA/AIA/BNP | 本周第一批投递 |
-| 3 | 如本周没找到活岗位，联系猎头投这三个方向 | 打开猎头渠道 |
-| 4 | 摸一下Allianz/Zurich/Prudential/Manulife | 入池备选 |
+| # | 行动项 |
+|---|--------|
+| 1 | 第一批投完，等反馈周期（1-2周） |
+| 2 | 摸Allianz/Zurich/Prudential/Manulife |
+| 3 | Big 4 Advisory方向联系猎头 |
 
-### 下下周（6/1+）
+### 6月初
 
 | # | 行动项 |
 |---|--------|
-| 1 | 根据前两周反馈率判断哪个赛道最有效 |
+| 1 | 根据反馈率判断哪个赛道最有效 |
 | 2 | 决定继续深打还是换方向 |
 
 ---
 
-## 三、简历调整策略
+## 四、简历调整方案
 
-| 方向 | 调整方案 |
-|------|---------|
-| **外资银行**（BNP/法兴/渣打） | Summary微调，BPCE经验保持不动（银行背景最强卖点），把"banking transformation"提到第一句 |
-| **外资保险**（AXA/AIA/Allianz等） | Summary把"compliance-driven environment"的强调加大（保险对合规极度敏感），BPCE银行经验可以框架性地讲成"complex regulated environment delivery" |
-| **共同点** | BPCE主体不动，NCR保持精简，只需要动Summary的头两句话 |
+三条线共享同一个简历骨架（BPCE+NCR主体不动），只动Summary头两句：
+
+### ① 外资保险/银行 IT BRM 版
+
+```
+Senior IT PM/BA with 14 years leading cross-border digital transformation 
+and strategic program delivery in global banking and complex regulated 
+environments. Reported directly to COO at a French multinational bank, 
+driving business-aligned IT initiatives across APAC...
+```
+→ 强调：银行背景 + COO汇报 + 合规环境
+
+### ② Finance Systems PM 版
+
+```
+Bilingual (CN/EN) IT Program Manager with a BSc in Accounting and 
+a Master's in International Business, bridging finance and technology 
+across global enterprises. 14 years delivering P&L-governed portfolios 
+and ERP/Finance system transformations...
+```
+→ 强调：会计学位放第一句 + P&L预算 + ERP经验
+
+### ③ Chief of Staff / COO Office 版
+
+```
+Strategic operations and program leader with direct reporting line 
+to a COO at a French bank, overseeing cross-functional business 
+transformation across APAC. Proven ability to operate at executive 
+level—managing board-level communication, portfolio governance, 
+and org-wide strategic initiatives...
+```
+→ 强调：高管接口 + 跨部门协调 + 战略视角
 
 ---
 
-## 四、核心卖点（面试/cover message用）
+## 五、核心卖点（通用）
 
 - 14年跨国外资机构商业IT PM/BA经验，report to COO
-- 全球交付管理（$50M+ portfolio）
-- 法资银行转型项目实战经验
+- 全球交付管理（$50M+ portfolio，APAC ROI #1连续3年）
+- 法资银行转型项目实战经验（BPCE）
 - 中国+法国+亚太跨文化矩阵管理
 - 合规敏感型行业（金融/保险）的IT交付能力
+- 会计学士 + 国际商务硕士（Finance PM赛道核心差异点）
