@@ -39,21 +39,14 @@ Program Manager with 14 years delivering enterprise-scale platform solutions and
 ### WuXi AppTec | Shanghai
 **Project Manager, Commercial Operations** | May 2015 – Aug 2016
 
-*Managed cross-functional projects in a pharmaceutical R&D environment, balancing data sharing requirements with IP protection standards.*
-
-- Integrated multi-lab progress tracking and established feedback mechanisms between business units and clients
-- Built Lean Six Sigma Yellow Belt project framework for structured problem-solving
-- Coordinated cross-functional stakeholders across R&D, operations, and client services
+Managed cross-functional projects in a pharmaceutical R&D environment, coordinating multi-lab progress tracking and cross-department stakeholder alignment.
 
 ---
 
 ### Hertz RAC | Shanghai
 **Customer Care Supervisor** | Dec 2011 – Apr 2015
 
-*Led customer service team during global merger and integration.*
-
-- Led team function restructuring during M&A: resource planning and KPI redesign
-- Established vendor scorecard and SLA framework for supplier performance management
+Led customer service team operations during global M&A integration, including resource planning, KPI redesign, and vendor SLA framework establishment.
 
 ---
 
