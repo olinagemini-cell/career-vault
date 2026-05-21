@@ -7,7 +7,7 @@ English (business proficient) · Mandarin (native)
 
 ## Professional Summary
 
-Program Manager with 14 years delivering enterprise-scale platform solutions, workflow automation, and process optimization in highly regulated financial and professional services environments. Adept at managing the end-to-end software development lifecycle for enterprise systems—including workflow engines, approval platforms, and document management—from requirements to deployment and compliance sign-off. Proven track record of leading cross-functional technical teams, establishing governance frameworks, and driving operational efficiency through RPA, low-code, and AI-augmented approaches. Direct COO reporting line with demonstrated C-level stakeholder management, vendor governance, and regulatory compliance (PIPL + GDPR dual jurisdiction, zero incidents). Certified PMP and ITIL Foundation.
+Program Manager with 14 years delivering enterprise-scale platform solutions and workflow automation in highly regulated financial environments. Proven expertise in independently leading full-cycle system rollouts covering front-office to mid-office business lines in a global financial institution—from global resource negotiation and cross-timezone planning to business requirements analysis, process optimization, and multi-system integration. Adept at translating complex business needs into technical solutions, driving rapid business adoption, and ensuring operational continuity through end-to-end governance. Direct COO reporting line with C-level stakeholder management, vendor governance, and regulatory compliance (PIPL + GDPR dual jurisdiction, zero incidents). Certified PMP and ITIL Foundation.
 
 ---
 
@@ -16,12 +16,14 @@ Program Manager with 14 years delivering enterprise-scale platform solutions, wo
 ### BPCE Equipment Solutions | Shanghai
 **IT Project Manager** | Nov 2022 – Present
 
-*Managed China IT delivery as the sole full-time PM, reporting to COO, with dual budget responsibility (P&L and cash-out).*
+*Sole China IT PM reporting directly to COO, accountable for the full lifecycle of the global ONE Platform rollout covering front-office, mid-office, and back-office integration.*
 
-- **Led China's first complete rollout of global ONE Platform** — drove full project lifecycle from planning through change management to hypercare, achieving **100% business utilization within 2 months** and becoming the first entity globally to achieve full system rollout
-- China deployment model **adopted as global replicable template**, securing second-phase HQ resource commitment; drove 70% operational cost reduction roadmap
+- **Led China's first complete rollout of global ONE Platform** — end-to-end ownership spanning front-office business systems to mid-office operational platforms. Independently managed global resource negotiation, cross-timezone scheduling, and multi-phase delivery planning from HQ alignment through change management to hypercare, achieving **100% business utilization within 2 months** and becoming the first entity globally to achieve full system rollout
+- **Deep business domain understanding and process optimization** — rapidly absorbed the full business workflow of a financial institution across front, mid, and back offices. Identified process bottlenecks and redesign opportunities before system configuration, driving **70% operational cost reduction roadmap** through workflow automation and process re-engineering
+- **Business requirements analysis and translation** — partnered with business users across departments to surface latent needs beneath surface-level requests, translating business language into precise technical specifications. Ensured the platform solved real operational pain points rather than simply automating existing inefficiencies
+- China deployment model **adopted as global replicable template**, securing second-phase HQ resource commitment for APAC expansion
 - Delivered PIPL compliance workstream with local legal counsel and HQ data protection teams, maintaining **zero compliance violations** in China's regulated banking environment (3+ years)
-- Built structured PM knowledge base and applied AI-augmented delivery frameworks across project lifecycle, driving **20-25% efficiency improvement**
+- **System integration ownership** — managed integration points between front-office, mid-office, and back-office systems, ensuring data consistency, operational continuity, and cross-system interoperability across the enterprise application landscape
 
 ---
 
@@ -32,7 +34,6 @@ Program Manager with 14 years delivering enterprise-scale platform solutions, wo
 
 - **Optimized resource allocation across 15+ parallel projects**, achieving **3 consecutive years ROI #1 in APAC** ($50M+ portfolio)
 - Led EPM system rollout in China: **95% user adoption within 3 months**, 30% manpower savings, zero data migration incidents
-- Led Yum! East China transformation: **5% warehouse cost savings, 20% labor cost reduction**; framework replicated to 3 additional accounts
 - Established Lean Six Sigma Yellow Belt frameworks; 20+ production releases with zero critical failures; 3-year zero-compliance-incident audit record
 
 ---
