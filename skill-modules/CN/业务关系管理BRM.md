@@ -50,7 +50,7 @@
 - 跨 KA 客户跨组合视角（两大行业客户）— 类似 BRM 的跨业务单元统筹
 - RFP/QBR 中担任 SME — 信任顾问角色
 - 构建销售/运营/开发跨职能沟通渠道 — BRM 的协调职能
-- 连续 3 年 APAC ROI 第一 — Outcome-based commitment 的量化证据
+- 连续 3 年 APAC ROI 位列前列 — Outcome-based commitment 的量化证据
 
 ### Hertz（2011-2015）— 基础积累期
 - 向 SVP 直汇报、跨全球协作 — 为日后 BRM 身份打基础
@@ -115,7 +115,7 @@
 - Business case & HQ resource advocacy — despite China's small share of global revenue, built commercial business cases positioning China needs as HQ-KPI accelerators; secured priority engineering capacity and Phase 2 funding under competitive cost-allocation.
 
 ### 量化成果
-- 全球首个完整上线实体（3 核心系统）
+- 全球首批完整上线实体（3 核心系统）
 - Phase 2 HQ 资金承诺
 - 70% 运营成本削减路线图
 - 2 个月内 100% 业务采纳
@@ -143,7 +143,7 @@
 
 ---
 
-*最后更新: 2026-04-19*
+*最后更新: 2026-05-22（对抗性审查校准：规则1/4应用）*
 
 ---
 
