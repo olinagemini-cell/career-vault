@@ -9,7 +9,10 @@
 - CLAUDE.md 更新启动流程和文件分工说明
 
 ## [Hermes] 2026-05-23
-- L'Oréal Data PM 定向简历完成（分析JD+微调+message）
-- 发布 Hermes↔CC 协作协议，已修正分支方向bug
+- **简历库重构**：删除`resumes/`文件夹（13个散装文件），全部合并至`简历库/`
+  - 通用版 → `简历库/通用版/`
+  - 定向简历→ `简历库/_Archive/2026-05/<公司名>/`（各含message）
+- L'Oréal Data PM 定向简历完成（已投出）
+- DXC Delivery Manager 定向简历完成（周一投）
 - GM BI Manager 定向简历完成
 - 埃森哲任务关闭，创建 2026-05-23 每日清单
