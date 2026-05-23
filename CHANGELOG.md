@@ -4,6 +4,7 @@
 > 格式：`[来源] 日期 | 变更内容`
 
 ## [Hermes] 2026-05-23
-- 发布 Hermes↔CC 协作协议 `hermes_to_cc_protocol.md`，请 CC 确认
-- GM BI Manager 定向简历完成（`简历库/_Archive/2026-05/GM_Business_Intelligence_Manager/`）
+- 发布 Hermes↔CC 协作协议 `hermes_to_cc_protocol.md`
+- 已修正：分支方向写反bug（实际Hermes用master→已切到main）
+- GM BI Manager 定向简历完成
 - 埃森哲任务关闭，创建 2026-05-23 每日清单
