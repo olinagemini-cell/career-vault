@@ -8,14 +8,14 @@
 ## 1. 分支约定
 
 **问题现状**：
-- CC 习惯用 `master` 分支
-- Hermes 用 `main` 分支
+- Hermes 习惯用 `master` 分支（SSH key配在master上）
+- CC 用 `main` 分支
 - 两人互相看不到对方推的东西
+- 已同步：CC 5.12已解决此问题，改成两人都往同一个分支推
 
-**方案：统一用 `main` 作为唯一工作分支**，废弃 `master`。
-- 你那边 `git checkout main`，以后全推 `main`
+**最终方案：统一用 `main` 作为唯一工作分支**，废弃 `master`。
+- Hermes 这边切到 `main`：`git checkout main`
 - `master` 分支留着不删，但不再使用
-- 注意：你的 auto-memory 系统如果写死了 `master`，请改成 `main`
 
 ---
 
@@ -93,7 +93,7 @@ git pull origin main
 
 ## 5. 文件不重复同步
 
-**你的 auto-memory 系统**（memory.md / profile.md 自动同步）— 确认一下它写的是哪个分支？如果是 `master`，记得改到 `main`。
+**你的 auto-memory 系统**（memory.md / profile.md 自动同步）— CC确认了sync.py用API不涉及分支，无影响，无需改动。
 
 ---
 
