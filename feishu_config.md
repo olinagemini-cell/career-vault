@@ -3,11 +3,13 @@
 > CC、Hermes、OpenClaw(龙虾)共用。飞书Base和多维表格的ID映射。
 > 最后更新: 2026-06-03 (Hermes重构为4阶段管线)
 
-## 应用凭据
+## 应用凭据（3个独立App，2026-06-03拆分）
 
-- **App ID**: `cli_a94d03c59bb85bb3`
-- **App Secret**: `ndgOy1DR50BStPfOlnJSsbitF6Q4es7F`
-- **权限**: `bitable:app` (读写多维表格), `im:message` (收发消息), `drive` (上传文件)
+| 角色 | App名称 | App ID | App Secret | 权限 |
+|------|---------|--------|------------|------|
+| CC | Improve | `cli_a94d03c59bb85bb3` | `ndgOy1DR50BStPfOlnJSsbitF6Q4es7F` | bitable:app, im:message, drive:file |
+| Hermes | Hermes秘书 | `cli_aa950ddcd7b85bcd` | `4xhjJXZVtC9PpaiXDa0fHgW7cHHGiXqr` | bitable:app, im:chat, im:message |
+| 龙虾 | 龙虾OpenClaw | `cli_aa95082153391be3` | `O8ljDi99fZgQvjwqHgeuwbjVUIoInWVj` | bitable:app, im:chat, drive:file |
 
 ## Base
 
