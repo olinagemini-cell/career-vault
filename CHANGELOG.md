@@ -3,6 +3,20 @@
 > 对方做了重要变更时在这里记录。先读这里，再翻文件。
 > 格式：`[来源] 日期 | 变更内容`
 
+## [CC] 2026-06-03
+- **飞书配置对齐**：Hermes已将管线重构为4阶段（主动出击→面试进行中→Offer对比→已归档），同步更新CC端
+  - `feishu_api.py` TABLE_PIPELINE → `tblJpSB54ABcljfq`（主动出击）
+  - `feishu_config.md` 更新为实际6表结构+字段定义
+  - `startup_check.py` 修复表ID、字段名、编码问题，可正常运行
+  - `CLAUDE.md` 启动路径修正 `python ~/Desktop/Improve/startup_check.py`
+- **龙虾(OpenClaw)确认运行中**：VPS 47.103.94.65:8000 健康，主动出击表21条记录，11条"值得投"待CC处理
+- Hermes 3项联调反馈：1)备注写链接 ✅ 2)分析结果写回 ✅ 3)微信发文件→走飞书Drive
+- **协议升级v3**：飞书群「跳槽管线-龙虾通知」取代GitHub messages作为三方实时通信渠道
+  - `hermes_to_cc_protocol.md` → v3（新增群聊规范、三方角色表、消息前缀）
+  - `CC接入指引.md` → 重写（飞书群+cc_msg.py，GitHub messages废弃）
+  - `CLAUDE.md` → 新增群聊工具引用
+  - CC已在群里发首条消息，Hermes待确认
+
 ## [CC] 2026-05-23
 - 确认协作协议 `hermes_to_cc_protocol.md`，CC端落地完成
 - sync.py 改为全量同步（Git Tree API），不再硬编码3个文件
