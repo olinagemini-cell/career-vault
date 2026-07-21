@@ -53,3 +53,5 @@
 - 面试准备：新增 docx 版本（总览/电话脚本/案例库）
 - 合并 Hermes 的 main 分支变更（resumes→简历库合并等）
 - master 分支内容推送至 main，sync.py 全量同步 192 文件
+[CC] 2026-07-21 | resume_rules.md: 明确不加Skills章节(一个Summary兜底)，ATS missing-skills警告可忽略
+[CC] 2026-07-21 | 双AI质检流程首个真实JD闭环: 生成BI_OpEx(勃林格殷格翰)+MP_IT_PM(Michael Page广告)两份简历, docx输出到~/Desktop/跳槽投递_2026-07-21/, 飞书主动出击表状态改简历已生成; BI为stretch(5+年pharma gap强投reframe)
