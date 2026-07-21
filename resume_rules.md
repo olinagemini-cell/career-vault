@@ -3,6 +3,7 @@
 ## 格式规范
 - 全英文，简洁无花哨
 - **不要** Core Competencies 表/标签
+- **不要** Skills 章节（一个 Summary 兜底即可，关键词融进 Summary 和 bullet；ATS 报"missing skills section"可忽略，不为此加章节）
 - **不要** 照片
 - Summary 控制在 60-80 字以内
 - 每段经历 2-3 个 bullet，bullet 要有内容不要空洞
